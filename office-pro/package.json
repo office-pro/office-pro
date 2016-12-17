@@ -41,6 +41,8 @@
     "karma-remap-istanbul": "^0.2.1",
     "protractor": "4.0.9",
     "ts-node": "1.2.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.2",
     "tslint": "^4.0.2",
     "typescript": "~2.0.3",
     "webdriver-manager": "10.2.5"
