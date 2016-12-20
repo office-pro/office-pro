@@ -8,12 +8,14 @@ import { routes } from './app.router';
 import { AppComponent } from './app.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServicesComponent,
-    AboutComponent
+    AboutComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
