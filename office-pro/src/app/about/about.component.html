@@ -1,3 +1,13 @@
-<p>
-  about works!
-</p>
+
+ <md-card *ngFor = "let ab of aboutx" class="margin">
+   <md-card-content>
+     <input type="text" [ngModel]="ab.id"><br/>
+     <button (click)="search(ab.id)">Search</button>
+   </md-card-content>
+ </md-card>  
+<md-card *ngIf = "x" class="margin">
+   <md-card-content>
+     <input type="text" [ngModel]="x.id"><br/>
+     <input type="text" [ngModel]="x.name">     
+   </md-card-content>
+ </md-card> 

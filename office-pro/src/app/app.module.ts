@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
+import { TaskService } from './task.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServicesComponent,
     AboutComponent,
-    NavComponent
+    NavComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { NavComponent } from './nav/nav.component';
     MaterialModule.forRoot(),
     routes
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 }) 
 export class AppModule {

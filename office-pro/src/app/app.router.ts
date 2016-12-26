@@ -9,6 +9,7 @@ export const router: Routes = [
     {path:'',redirectTo:'about',pathMatch:'full'},
     {path:'about',component: AboutComponent},
     {path:'services',component: ServicesComponent},
+    {path:'about/:id',component: AboutComponent}
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
