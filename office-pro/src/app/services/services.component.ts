@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild  } from '@angular/core';
+import { MdSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-services',
@@ -8,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class ServicesComponent implements OnInit {
 
   title = "service";
+    dogs = [ { name : "dog1", rows: 1},
+           { name : "dog2",rows: 1},
+           { name : "dog3", rows: 2},
+           { name : "dog4", rows: 1},
+           { name : "dog5", rows: 1},
+           { name : "dog6", rows: 1}
+         ];
   constructor() { }
 
   ngOnInit() {
   }
-
+@ViewChild('sidenav') sidenav :MdSidenav;
+  close() :void {
+    this.sidenav.open();
+  }
 }

@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { TaskService } from './task.service';
+import { LoginComponentComponent } from './login-component/login-component.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TaskService } from './task.service';
     ServicesComponent,
     AboutComponent,
     NavComponent,
+    LoginComponentComponent,
     
   ],
   imports: [

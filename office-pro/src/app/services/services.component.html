@@ -1,3 +1,28 @@
-<p>
-  services works!
-</p>
+<md-sidenav-layout>
+  <md-sidenav align="end" mode="side" #sidenav>
+    <md-tab-group>
+      <md-tab>
+        <template md-tab-label>One</template>
+        <template md-tab-content>
+          <button (click)="sidenav.close()">Close</button>
+        </template>
+      </md-tab>
+      <md-tab>
+        <template md-tab-label>Two</template>
+        <template md-tab-content>
+        </template>
+      </md-tab>
+    </md-tab-group>
+
+  </md-sidenav> 
+
+  <md-grid-list cols="4" rowHeight="200px">
+  <md-grid-tile *ngFor="let dog of dogs" [rowspan] = "dog.rows">
+    <img src="assets/{{dog.name}}.jpg" alt="{{dog.name}}">
+    <md-grid-tile-footer>
+      <h3 md-line (click)="close()">{{dog.name}}</h3>
+      <md-icon>info</md-icon>
+    </md-grid-tile-footer>
+  </md-grid-tile>
+</md-grid-list>
+</md-sidenav-layout>
