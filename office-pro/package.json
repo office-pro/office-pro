@@ -9,9 +9,7 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
-    "preinstall": "npm install -g http-server",
-    "start.prod": "http-server dist/",
-    "build.prod": "ng build --prod"
+    "preinstall": "npm install -g http-server"
   },
   "private": true,
   "dependencies": {
