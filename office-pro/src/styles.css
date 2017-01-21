@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Roboto,san-serif;
+   background-color:#e67e22;
 }
 
 * {
@@ -21,4 +22,8 @@ md-grid-list {
 }
 md-sidenav {
     width: 320px;
+}
+
+.set-background-color {
+    background-color:#e67e22;
 }

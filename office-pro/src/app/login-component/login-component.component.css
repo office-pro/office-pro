@@ -1,3 +1,12 @@
-set-background-color {
 
+.set-position{
+    width: 550px;
+    text-align: center;
+}
+.align-center {
+    margin: 0 auto;
+    margin-top: 132px;
+}
+.margin-left {
+    margin-left: 121px;
 }
