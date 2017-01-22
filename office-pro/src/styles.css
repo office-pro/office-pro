@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Roboto,san-serif;
-   background-color:#e67e22;
+   background-color:#e5e5e5;
 }
 
 * {
@@ -20,10 +20,48 @@ md-grid-list {
     max-width: 1403px;
     margin: 16px;
 }
+.gray {
+  /*color: #9f9f9f;*/
+  color:#673ab7;
+}
 md-sidenav {
     width: 320px;
 }
 
-.set-background-color {
-    background-color:#e67e22;
+.margin{
+    margin-bottom: 10px;
 }
+
+a {
+  text-decoration: none;
+}
+.set-margin-right {
+  margin-right:20px;
+}
+
+.set-margin-left {
+   margin-left:20px; 
+}
+
+.set-background-color {
+    background-color:#bdc3c7;
+   
+}
+.set-input-width {
+    width:426px;
+    margin: 0 auto;
+}
+.align-right {
+    right: 0;
+    position: absolute;
+}
+.cardboard-setting {
+    width:700px;
+    margin: 0 auto;
+}
+
+    #about:hover,
+    #services:hover,
+    #login:hover {
+        color:lightgrey;
+    }

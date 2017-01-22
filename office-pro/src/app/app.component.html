@@ -1,8 +1,18 @@
-<md-toolbar color="accent">
-  <span>Office-pro</span>
-  <a routerLink="about">About</a>
-  <a routerLink="services">Service</a>
+<md-toolbar id="toolbar" color="primary" class="margin animated fadeInDown">
+  <span class="set-margin-right">Office-pro</span>
+  <a routerLink="about" id="about" class="set-margin-right set-white-color">About</a>
+  <a routerLink="services" id="services" class="set-margin-right set-white-color">Service</a>
+  <a routerLink="login" id="login" class="set-margin-right set-white-color">Login</a>
+  <button md-icon-button [mdMenuTriggerFor]="menu" class="align-right" aria-label="Open basic menu" >
+    <md-icon>more_vert</md-icon>
+  </button>
+   <md-menu #menu="mdMenu">
+  <button md-menu-item *ngFor="let item of items" (click)="select(item.text)" [disabled]="item.disabled">
+        {{ item.text }}
+  </button>
+  </md-menu>
 </md-toolbar>
+
 <div>
     <router-outlet></router-outlet>
 </div>
@@ -20,7 +30,4 @@
   <md-checkbox [disabled]="true">Disabled</md-checkbox>
 </md-card>
 -->
-
-
-
 
