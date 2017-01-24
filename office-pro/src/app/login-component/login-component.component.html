@@ -8,6 +8,8 @@
     <span md-prefix><md-icon class="material-icons gray">lock</md-icon></span>
   </md-input>
   </md-card-content>
-  <button md-raised-button color="primary" class="width-150" (click)="Submit(username,password)">Submit</button>
+  <button md-raised-button color="primary" type="submit" class="width-150" (click)="Submit()">Submit</button>
+  <h3>Or</h3>
+  <button md-raised-button color="primary" class="width-150" routerLink="/signup">Sign Up</button>
   </md-card>
 </div>

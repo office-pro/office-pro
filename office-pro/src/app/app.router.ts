@@ -1,4 +1,4 @@
-import {ModuleWithProviders} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -11,7 +11,16 @@ export const router: Routes = [
     {path:'login',component: LoginComponentComponent},
     {path:'about',component: AboutComponent},
     {path:'services',component: ServicesComponent},
-    {path:'about/:id',component: AboutComponent}
+    {path:'about/:id',component: AboutComponent},
 ];
 
-export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+@NgModule({
+    imports: [RouterModule.forRoot(router)],
+    exports: [RouterModule]
+})
+
+export class AppRoutingModule{
+
+}
+
+export const routingComponents = [AppComponent,LoginComponentComponent,ServicesComponent,AboutComponent];

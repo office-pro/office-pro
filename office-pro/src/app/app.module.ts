@@ -3,30 +3,26 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
-import { routes } from './app.router';
+import { AppRoutingModule,routingComponents } from './app.router';
+import { LoginRouteModules,LoginRoutes} from './login-component/login-router';
 
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './services/services.component';
-import { AboutComponent } from './about/about.component';
-import { NavComponent } from './nav/nav.component';
 import { TaskService } from './task.service';
-import { LoginComponentComponent } from './login-component/login-component.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServicesComponent,
-    AboutComponent,
-    NavComponent,
-    LoginComponentComponent,
-    
+    routingComponents,
+    LoginRoutes   
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    routes
+    AppRoutingModule,
+    LoginRouteModules
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]
