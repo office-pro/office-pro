@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppRoutingModule,routingComponents } from './app.router';
@@ -22,7 +22,8 @@ import { TaskService } from './task.service';
     HttpModule,
     MaterialModule.forRoot(),
     AppRoutingModule,
-    LoginRouteModules
+    LoginRouteModules,
+    ReactiveFormsModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]
