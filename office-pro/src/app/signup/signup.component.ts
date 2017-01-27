@@ -26,11 +26,17 @@ export class SignupComponent implements OnInit {
         state: '',
         pincode: ''
       }),
-      referralcode:'',
+      referralcode: '',
     });
    }
 
   ngOnInit() {
+  }
+  Submit() {
+    alert(JSON.stringify(this.form.value));
+  }
+  Reset() {
+    this.form.value = '';
   }
 
 }

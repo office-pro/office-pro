@@ -3,73 +3,51 @@
     <md-card-header>
       <h2 class="color-ccc center-without-padding">SignUp</h2>
     </md-card-header>  
-    <!--<md-card-content>
-      <md-input placeholder="First name" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">person</md-icon></span>
-      </md-input>
-      <md-input placeholder="Username" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">email</md-icon></span>
-      </md-input>
-      <md-input placeholder="Password" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">lock</md-icon></span>
-      </md-input>
-      <md-input placeholder="Mobile Number" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">phone</md-icon></span>
-      </md-input>
-      <md-input placeholder="address" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">menu</md-icon></span>
-      </md-input>
-      <md-input placeholder="ReferralCode" align="start" class="set-input-width padding-17" required>
-        <span md-prefix><md-icon class="material-icons gray">code</md-icon></span>
-      </md-input>
-      <button md-raised-button color="primary" (click)=Submit() class="width-150">Submit</button>
-      <button md-raised-button color="primary" (click)=Reset() class="width-150">Reset</button>
-      <h3 class="color-ccc">or</h3>
-      <h3 class="color-ccc">Have an Account</h3>
-      <button md-raised-button class="width-310" color="primary" routerLink="/login">Go to Login Form</button>  
-    </md-card-content> -->
-   
-      <form [formGroup]='form'>
-        <md-input placeholder="First name" align="start" FormControlName="firstname" class="set-input-width padding-17" >
+      <form novalidate [formGroup]='form'>
+        <md-input placeholder="First name" align="start" formControlName="firstname" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">person</md-icon></span>
         </md-input>
-        <md-input placeholder="Last name" align="start" FormControlName="lastname" class="set-input-width padding-17" >
+        <md-input placeholder="Last name" align="start" formControlName="lastname" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">person</md-icon></span>
         </md-input>
-        <md-input placeholder="User name" align="start" FormControlName="username" class="set-input-width padding-17" >
+        <md-input placeholder="User name" align="start" formControlName="username" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">email</md-icon></span>
         </md-input>
-        <md-input placeholder="password" align="start" FormControlName="password" class="set-input-width padding-17" >
+        <md-input placeholder="password" align="start" formControlName="password" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">lock</md-icon></span>
         </md-input>
-        <md-input placeholder="Confirm password" align="start" FormControlName="confirmpassword" class="set-input-width padding-17" >
+        <md-input placeholder="Confirm password" align="start" formControlName="confirmpassword" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">lock</md-icon></span>
         </md-input>
-        <md-input placeholder="Mobile No" align="start" FormControlName="mobilenumber" class="set-input-width padding-17" >
+        <div formGroupName="phone">
+        <md-input placeholder="Mobile No" align="start" formControlName="mobilenumber" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">phone</md-icon></span>
         </md-input>
-        <md-input placeholder="Office No" align="start" FormControlName="officenumber" class="set-input-width padding-17" >
+        <md-input placeholder="Office No" align="start" formControlName="officenumber" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">person</md-icon></span>
         </md-input>
-        <md-input placeholder="Flat No/Office No" align="start" FormControlName="flatno" class="set-input-width padding-17" >
+        </div>
+        <div formGroupName="address">
+        <md-input placeholder="Flat No/Office No" align="start" formControlName="flatno" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">home</md-icon></span>
         </md-input>
-        <md-input placeholder="Building Name" align="start" FormControlName="buildingname" class="set-input-width padding-17" >
+        <md-input placeholder="Building Name" align="start" formControlName="buildingname" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">home</md-icon></span>
         </md-input>
-        <md-input placeholder="Street" align="start" FormControlName="street" class="set-input-width padding-17" >
+        <md-input placeholder="Street" align="start" formControlName="street" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">place</md-icon></span>
         </md-input>
-        <md-input placeholder="City" align="start" FormControlName="city" class="set-input-width padding-17" >
+        <md-input placeholder="City" align="start" formControlName="city" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">place</md-icon></span>
         </md-input>
-        <md-input placeholder="State" align="start" FormControlName="state" class="set-input-width padding-17" >
+        <md-input placeholder="State" align="start" formControlName="state" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">place</md-icon></span>
         </md-input>
-        <md-input placeholder="Pin Code" align="start" FormControlName="pincode" class="set-input-width padding-17" >
+        <md-input placeholder="Pin Code" align="start" formControlName="pincode" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">place</md-icon></span>
         </md-input>
-        <md-input placeholder="Referral Code" align="start" FormControlName="referralcode" class="set-input-width padding-17" >
+        </div>
+        <md-input placeholder="Referral Code" align="start" formControlName="referralcode" class="set-input-width padding-17" >
           <span md-prefix><md-icon class="material-icons gray">code</md-icon></span>
         </md-input>
         <button md-raised-button color="primary" (click)=Submit() class="width-150">Submit</button>
@@ -77,6 +55,7 @@
         <h3 class="color-ccc">or</h3>
         <h3 class="color-ccc">Have an Account</h3>
         <button md-raised-button class="width-310" color="primary" routerLink="/login">Go to Login Form</button>  
-      </form>    
+      </form> 
+      
   </md-card>
 </div>
