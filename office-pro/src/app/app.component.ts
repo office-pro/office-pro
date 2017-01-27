@@ -9,18 +9,18 @@ import { TaskService } from './task.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'app works!';
+  isDarkTheme= false;
 
   ngOnInit(): void {
-    
   }
    selected = '';
-  items = [
-    {text: 'Refresh'},
-    {text: 'Settings'},
-    {text: 'Help', disabled: true},
-    {text: 'Sign Out'}
-  ];
+    items = [
+      {text: 'Refresh'},
+      {text: 'Settings'},
+      {text: 'Change Theme'},
+      {text: 'Help', disabled: true},
+      {text: 'Sign Out'}
+    ];
 
   iconItems = [
     {text: 'Redial', icon: 'dialpad'},
@@ -28,5 +28,12 @@ export class AppComponent implements OnInit {
     {text: 'Disable alerts', icon: 'notifications_off'}
   ];
 
-  select(text: string) { this.selected = text; }
+  select(text: string) { 
+    this.selected = text;
+
+    if(text == 'Refresh'){
+      alert("hii")
+      window.location.reload();
+    }
+     }
 }
