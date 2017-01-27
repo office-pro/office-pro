@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./login-component.component.css']
 })
 export class LoginComponentComponent implements OnInit {
-  private login= {};
+  login= {};
   constructor() { }
 
   Submit() :void{

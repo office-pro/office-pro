@@ -9,7 +9,6 @@ import { LoginRouteModules,LoginRoutes} from './login-component/login-router';
 import { AppComponent } from './app.component';
 import { TaskService } from './task.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
