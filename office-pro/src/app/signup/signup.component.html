@@ -24,7 +24,7 @@
           <span md-prefix><md-icon class="material-icons gray">phone</md-icon></span>
         </md-input>
         <md-input placeholder="Office No" align="start" formControlName="officenumber" class="set-input-width padding-17" >
-          <span md-prefix><md-icon class="material-icons gray">person</md-icon></span>
+          <span md-prefix><md-icon class="material-icons gray">phone</md-icon></span>
         </md-input>
         </div>
         <div formGroupName="address">
@@ -56,6 +56,8 @@
         <h3 class="color-ccc">Have an Account</h3>
         <button md-raised-button class="width-310" color="primary" routerLink="/login">Go to Login Form</button>  
       </form> 
-      
+      <md-card-content>
+        form status: {{form.errors | json}}        
+      </md-card-content>  
   </md-card>
 </div>

@@ -8,12 +8,14 @@ import { LoginRouteModules,LoginRoutes} from './login-component/login-router';
 
 import { AppComponent } from './app.component';
 import { TaskService } from './task.service';
+import {DashboardRoutes,DashboardRoutesComponent} from './dashboard/dashboard.router';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    LoginRoutes   
+    LoginRoutes,
+    DashboardRoutesComponent   
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { TaskService } from './task.service';
     MaterialModule.forRoot(),
     AppRoutingModule,
     LoginRouteModules,
+    DashboardRoutes,
     ReactiveFormsModule
   ],
   providers: [TaskService],
