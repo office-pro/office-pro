@@ -5,7 +5,7 @@ import { SignupComponent } from '../signup/signup.component';
 export const routes: Routes = [{path:'signup',component: SignupComponent}];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
 

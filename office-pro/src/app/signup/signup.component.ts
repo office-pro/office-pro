@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormArray, FormControl, FormGroup, FormBuilder, Validator } from '@angular/forms';
+import { AbstractControl, FormArray, FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+function passwordMatcher(c: AbstractControl)
+{
+  return c.get('password').value === c.get('confirmpassword').value? 
+    'valid' : 'ininvalid'; 
+}
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -12,8 +19,8 @@ export class SignupComponent implements OnInit {
       firstname: '',
       lastname: '',
       username: '',
-      password: '',
-      confirmpassword: '',
+      password: ['', Validators.required],
+      confirmpassword: ['', Validators.required],
       phone: this._formBuilder.group({
         mobilenumber: '',
         officenumber:''
@@ -26,11 +33,17 @@ export class SignupComponent implements OnInit {
         state: '',
         pincode: ''
       }),
-      referralcode:'',
-    });
+      referralcode: '',
+    },{Validator: passwordMatcher});
    }
 
   ngOnInit() {
+  }
+  Submit() {
+    alert(JSON.stringify(this.form.value));
+  }
+  Reset() {
+    this.form.value = '';
   }
 
 }
