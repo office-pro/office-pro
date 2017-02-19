@@ -18,8 +18,9 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
-        "leashed-theme.scss"
+        "styles/styles.css",
+        "styles/main.scss",
+        "styles/animate.css"
       ],
       "scripts": [],
       "environments": {

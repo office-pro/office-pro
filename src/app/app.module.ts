@@ -5,29 +5,34 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppRoutingModule,routingComponents } from './app.router';
 import { LoginRouteModules,LoginRoutes} from './login-component/login-router';
-
 import { AppComponent } from './app.component';
 import { TaskService } from './task.service';
 import {DashboardRoutes,DashboardRoutesComponent} from './dashboard/dashboard.router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { SidenavDirective } from './sidenav.directive';
+import { DashboardService } from './dashboard.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     LoginRoutes,
-    DashboardRoutesComponent   
+    DashboardRoutesComponent,
+    UserProfileComponent,
+    SidenavDirective   
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
+    FormsModule,
     MaterialModule.forRoot(),
     AppRoutingModule,
     LoginRouteModules,
     DashboardRoutes,
     ReactiveFormsModule
   ],
-  providers: [TaskService],
+  providers: [TaskService, DashboardService],
   bootstrap: [AppComponent]
 }) 
 export class AppModule {

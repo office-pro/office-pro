@@ -1,0 +1,22 @@
+[
+   {
+       "name" : "Epson Picturemate Ink",
+       "picture": "/assets/Epson pictureMate Ink.JPG",
+       "description": "The Epson PictureMate, like the Kodak EasyShare, is specially designed for printing personal pictures. Because of that, it ranks high among photo ink cartridges—however, to enjoy the use of this high-quality photo printing technology, one must own the PictureMate"
+   },
+   {
+       "name" : "Hp Color Photo",
+       "picture": "/assets/Hp Color Photo.JPG",
+       "description": "Though HP's Vivera line makes for high-quality photo printing, it cannot top HP's range of color photo ink cartridges. These versatile ink cartridges  will not smudge or scratch and that will eliminate any graininess or noise. The best part about these items is that they are compatible with virtually all HP printers."
+   },
+   {
+       "name" : "Hp vivera Ink",
+       "picture": "/assets/Hp vivera Ink.JPG",
+       "description": "Though HP's Vivera line makes for high-quality photo printing The best part about these items is that they are compatible with virtually all HP printers."
+   },
+   {
+       "name" : "Kodak Easy Share",
+       "picture": "/assets/Kodak Easy Share10.JPG",
+       "description": "Kodak EasyShare ink cartridges are designed printing pictures and nothing else"
+   }
+]

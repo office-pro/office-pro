@@ -1,3 +1,74 @@
+
+<!--<h2>Basic Use Case</h2>
+
+<md-sidenav-container class="demo-sidenav-container">
+  <md-sidenav #start (open)="myinput.focus()" mode="side">
+    Start Side Drawer
+    <br>
+    <button md-button (click)="start.close()">Close</button>
+    <br>
+    <button md-button (click)="end.open()">Open End Side</button>
+    <br>
+    <button md-button
+            (click)="start.mode = (start.mode == 'push' ? 'over' : (start.mode == 'over' ? 'side' : 'push'))">Toggle Mode</button>
+    <div>Mode: {{start.mode}}</div>
+    <br>
+    <input #myinput>
+  </md-sidenav>
+
+<md-sidenav #end align="end">
+    End Side Drawer
+    <br>
+    <button md-button (click)="end.close()">Close</button>
+  </md-sidenav>
+
+  <div class="demo-sidenav-content">
+    <h1>My Content</h1>
+
+    <div>
+      <header>Sidenav</header>
+      <button md-button (click)="start.toggle()">Toggle Start Side Drawer</button>
+      <button md-button (click)="end.toggle()">Toggle End Side Drawer</button>
+    </div>
+
+    <button md-button>HELLO</button>
+    <button md-raised-button class="md-primary">HELLO</button>
+    <button md-fab class="md-accent">HI</button>
+  </div>
+</md-sidenav-container>
+
+ <h2>Sidenav Already Opened</h2>
+
+<md-sidenav-container class="demo-sidenav-container">
+  <md-sidenav #start2 opened mode="side">
+    Drawer
+  </md-sidenav>
+
+  <div class="demo-sidenav-content">
+    <button md-button (click)="start2.toggle()">Toggle Start Side Drawer</button>
+  </div>
+</md-sidenav-container>
+
+<h2>Dynamic Alignment Sidenav</h2>
+
+<md-sidenav-container class="demo-sidenav-container">
+  <md-sidenav #dynamicAlignSidenav mode="push" [align]="side">Drawer</md-sidenav>
+
+  <div class="demo-sidenav-content">
+    <button (click)="dynamicAlignSidenav.toggle()">Toggle sidenav</button>
+    <button (click)="side = (side == 'start') ? 'end' : 'start'">Change sides</button>
+  </div>
+</md-sidenav-container>
+
+
+-->
+
+
+
+ 
+
+
+
 <div [class.dark-theme]="isDarkTheme">
 <md-toolbar id="toolbar" color="primary" class="margin animated fadeInDown">
   <span class="set-margin-right">Office-pro</span>
@@ -8,6 +79,9 @@
     <md-icon>more_vert</md-icon>
   </button>
    <md-menu #menu="mdMenu">
+   <button md-menu-item (click)="select(item.text)">
+        Change Theme
+  </button>   
   <button md-menu-item *ngFor="let item of items" (click)="select(item.text)" [disabled]="item.disabled">
         {{ item.text }}
   </button>
@@ -15,9 +89,12 @@
 </md-toolbar>
 
 <div>
-    <router-outlet routerOnActivate="active"></router-outlet>
+    <router-outlet routerOnActivate="active" class="apply-background"></router-outlet>
 </div>
 </div>
+
+
+
 <!-- <md-card>
   <button md-button>FLAT</button>
   <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>

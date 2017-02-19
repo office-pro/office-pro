@@ -2,7 +2,6 @@ import { Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 import { Abouts } from './about/abouts';
 import { TaskService } from './task.service';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,14 +9,13 @@ import { TaskService } from './task.service';
 })
 export class AppComponent implements OnInit {
   isDarkTheme= false;
-
+  side = 'start';
   ngOnInit(): void {
   }
    selected = '';
     items = [
       {text: 'Refresh'},
       {text: 'Settings'},
-      {text: 'Change Theme'},
       {text: 'Help', disabled: true},
       {text: 'Sign Out'}
     ];
