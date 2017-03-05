@@ -1,0 +1,69 @@
+.align-right {
+    right: 0;
+    position: absolute;
+}
+.set-white-color {
+    color: rgba(255,255,255,0.87);
+}
+
+.apply-background {
+    background-color: blue;
+}
+
+md-sidenav.md-sidenav-opened {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transform: translate3d(0, 0, 0);
+}
+md-sidenav {
+     position: relative; 
+     transform: translate3d(0, 0, 0); 
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+     z-index: 3; 
+     min-width: 5%; 
+     overflow-y: auto;
+    transform: translate3d(-100%, 0, 0);
+}
+ .custom-modal-container {
+   padding: 15px;
+}
+
+ .custom-modal-header {
+    background-color: #219161;
+    color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+/*
+  
+<style>…</style>
+.app-sidenav[_ngcontent-ipw-1] {
+    padding: 10px;
+    min-width: 100px;
+}
+
+<style>…</style>
+md-sidenav.md-sidenav-side {
+    z-index: 1;
+}
+<style>…</style>
+
+<style>…</style>
+md-sidenav {
+    transition: transform 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+<style>…</style>
+
+<style>…</style>
+md-sidenav {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+}*/
+
+/**/

@@ -1,10 +1,11 @@
-<md-grid-list cols="3" gutterSize="30px" rowHeight="500px" class="animated fadeIn idealist">
+<!--<md-grid-list cols="3" gutterSize="30px" rowHeight="500px" class="animated fadeIn idealist">
+  
   <md-grid-tile *ngFor="let printer of printerObj; let i = index">
     <md-card id="printer_{{i}}">
       <md-card-header>
         <img md-card-avatar src="{{printer.picture}}" md-tooltip={{printer.name}} tooltip-position="below">
         <md-card-title><a href="#">{{printer.name}}</a></md-card-title>
-        <span class="example-fill-remaining-space"></span>-->
+        <span class="example-fill-remaining-space"></span>
         <button md-icon-button md-tooltip="Fullscreen" tooltip-position="below">
     <md-icon class="material-icons gray md-24">fullscreen </md-icon>
       </button>
@@ -38,13 +39,13 @@
       <div class="share-icon-wrapper" (mouseenter)="toggle(printer)" (mouseleave)="toggle(printer)">
         <span *ngIf="printer.show" class="animated bounceInRight "> 
               <button md-mini-fab class=" facebook">
-                <md-icon class="md-18" svgSrc="assets/img/facebook.svg"></md-icon>
+                <md-icon class="md-18" [svgIcon]="facebook"></md-icon>
               </button>
               <button md-mini-fab class=" twitter">
-                <md-icon class="md-18" svgSrc="assets/img/twitter.svg"></md-icon>
+                <md-icon class="md-18" [svgIcon]="twitter"></md-icon>
               </button>
               <button md-mini-fab class=" googleplus">
-                <md-icon class="md-18" svgSrc="assets/img/google-plus.svg" ></md-icon>
+                <md-icon class="md-18" [svgIcon]="google-plus" ></md-icon>
              </button>
             </span>
 
@@ -64,5 +65,8 @@
     <md-icon class="md-24 " >add</md-icon>
 </button>
   </a>
-</div>
+</div>-->
+
+ 
+
 <router-outlet></router-outlet>

@@ -5,10 +5,11 @@ import { TaskService } from './task.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   isDarkTheme= false;
+  value = false;
   side = 'start';
   ngOnInit(): void {
   }
@@ -33,5 +34,6 @@ export class AppComponent implements OnInit {
       alert("hii")
       window.location.reload();
     }
-     }
+  }  
+  
 }

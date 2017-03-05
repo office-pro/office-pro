@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { DashboardService } from '../dashboard.service';
+import { MdIconRegistry } from '@angular/material';
 import { Printer } from '../api/printer.model';
 
 
@@ -12,9 +13,10 @@ import { Printer } from '../api/printer.model';
 export class DashboardComponent implements OnInit {
   printerObj: Printer[];
   errorMessage :any;
-  constructor(private router:Router,private _dashboardService: DashboardService) {
-
-   }
+  constructor(private router:Router,private _dashboardService: DashboardService, private mdIconRegistry: MdIconRegistry) {
+     this.mdIconRegistry.addSvgIcon('google-plus','google-plus.svg');
+     this.mdIconRegistry.addSvgIcon('facebook','facebook.svg');
+     this.mdIconRegistry.addSvgIcon('twitter','twitter.svg') }
 
    getPrinter() {
      this._dashboardService.getPrinter().subscribe(
@@ -24,8 +26,8 @@ export class DashboardComponent implements OnInit {
      console.log(this.printerObj);
    } 
    
-   toggle(dummyIdea):void {
-      dummyIdea.show = !dummyIdea.show
+   toggle(printer):void {
+      printer.show = !printer.show
     }
 
     ngOnInit() {

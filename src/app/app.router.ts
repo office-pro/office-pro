@@ -11,7 +11,7 @@ export const router: Routes = [
     {path:'login',component: LoginComponentComponent},
     {path:'about',component: AboutComponent},
     {path:'services',component: ServicesComponent},
-    {path:'about/:id',component: AboutComponent},
+    {path:'about/:id',component: AboutComponent}
 ];
 
 @NgModule({

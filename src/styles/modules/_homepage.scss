@@ -1,0 +1,11 @@
+.min-div {
+    width: 20%;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+}
+.max-div{
+  width: 80%;
+  height: $height-100;
+  float: right;
+}
