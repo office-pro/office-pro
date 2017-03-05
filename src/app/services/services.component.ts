@@ -22,6 +22,6 @@ export class ServicesComponent implements OnInit {
   }
 @ViewChild('sidenav') sidenav :MdSidenav;
   close() :void {
-    this.sidenav.open();
+    this.sidenav.toggle();
   }
 }

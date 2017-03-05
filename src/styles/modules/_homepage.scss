@@ -1,11 +1,18 @@
 .min-div {
     width: 20%;
     background-color: black;
-    position: absolute;
-    z-index: 9999;
+    position: fixed;
+    height:100%;
 }
 .max-div{
   width: 80%;
   height: $height-100;
   float: right;
+}
+.div-20 {
+  width: 20%;
+  background-color: gray;
+  position: fixed;
+  margin-top: -25px;
+  height: 100%;
 }

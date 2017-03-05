@@ -15,6 +15,7 @@ import { NavHeaderComponent } from './nav-header/nav-header.component';
 //import { ModalModule } from 'angular2-modal';
 // import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { MenuSliderItemComponent } from './nav-header/menu-slider-item/menu-slider-item.component';
+import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboard-sidebar.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 
 
@@ -28,7 +29,8 @@ import { MenuSliderItemComponent } from './nav-header/menu-slider-item/menu-slid
     UserProfileComponent,
     SidenavDirective,
     NavHeaderComponent,
-    MenuSliderItemComponent   
+    MenuSliderItemComponent,
+    DashboardSidebarComponent   
   ],
   imports: [
     BrowserModule,
