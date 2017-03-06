@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   isDarkTheme= false;
   value = false;
   side = 'start';
+  
   ngOnInit(): void {
   }
    selected = '';
