@@ -12,6 +12,7 @@ import { Printer } from '../api/printer.model';
 })
 export class DashboardComponent implements OnInit {
   printerObj: Printer[];
+ 
   errorMessage :any;
   constructor(private router:Router,private _dashboardService: DashboardService, private mdIconRegistry: MdIconRegistry) {
      this.mdIconRegistry.addSvgIcon('google-plus','google-plus.svg');
@@ -33,5 +34,7 @@ export class DashboardComponent implements OnInit {
     ngOnInit() {
       this.getPrinter();
   }
-
+  call(document) {
+    document.show = !document.show
+  }
 }

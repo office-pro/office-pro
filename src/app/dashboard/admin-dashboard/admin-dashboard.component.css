@@ -1,0 +1,72 @@
+md-card {
+  display: inline-block;
+}
+
+.admin-user-box {
+  width: 135px;
+  border-radius: 8px;
+  margin-left:20px;
+  background: transparent;
+}
+.make-content-center {
+     margin: 0 auto;
+}  
+
+.d3-chart {
+  width: 100%;
+  height: 400px;
+}
+ 
+.d3-chart .axis path,
+.d3-chart .axis line {
+  stroke: #999;
+}
+ 
+.d3-chart .axis text {
+  fill: #999;
+}
+
+.theme-panel .theme-collapse-btn {
+    position: absolute;
+    left: -30px;
+    top: 10%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #333;
+    background: #fff;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    box-shadow: -1px 0 3px -1px rgba(0,0,0,.4);
+    -webkit-box-shadow: -1px 0 3px -1px rgba(0,0,0,.4);
+    -moz-box-shadow: -1px 0 3px -1px rgba(0,0,0,.4);
+}
+
+
+.btn.active:focus, .btn:active:focus, .btn:focus, a:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+a {
+    transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;
+    -ms-transition: color .1s ease-in-out;
+    -moz-transition: color .1s ease-in-out;
+    -webkit-transition: color .1s ease-in-out;
+}

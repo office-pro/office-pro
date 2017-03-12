@@ -17,6 +17,7 @@ import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { MenuSliderItemComponent } from './nav-header/menu-slider-item/menu-slider-item.component';
 import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboard-sidebar.component';
 import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
+import { BarchartComponent } from './shared/barchart/barchart.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 
 
@@ -32,7 +33,8 @@ import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashb
     NavHeaderComponent,
     MenuSliderItemComponent,
     DashboardSidebarComponent,
-    AdminDashboardComponent   
+    AdminDashboardComponent,
+    BarchartComponent   
   ],
   imports: [
     BrowserModule,
