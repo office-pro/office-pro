@@ -1,19 +1,76 @@
 <div class="main-page">
-  <div class="div-40 float-left height-auto">
+   
+  <div class="div-40 float-left height-auto padding-top">
     <md-card>
+      <md-card-title>
+        Total Transaction
+      </md-card-title>  
       <md-card-content>
-        <b>First Name:</b> Mittapelli <br>
-        <strong>age:</strong> 22 <br>
-        <strong></strong>
-      </md-card-content>  
-    </md-card>  
-    
+        22400
+      </md-card-content>
+    </md-card> 
   </div>
   <div class="div-20-per">
-    <div class="image-photo"> 
+    <div class="image-photo" (click)="modal.open()">
     </div>
   </div>
-  <div class="div-40 float-right height-auto">
-
+  <div class="div-40 float-right height-auto padding-top">
+    <md-card>
+      <md-card-title>
+        Number of transactions
+      </md-card-title>  
+      <md-card-content>
+        22
+      </md-card-content>  
+    </md-card>
   </div>
+  <div class="info-page padding-5">
+    <md-card>
+      <md-card-title>
+        Personal Details
+      </md-card-title>  
+      <md-card-content>
+        <b>Name:</b> Mittapelli Shashikant<br>
+        <strong>age:</strong> 22 <br>
+        <strong>Email:</strong> shaelm29@gmail.com <br>
+        <strong>Location:</strong> Pune <br>
+      </md-card-content>
+    </md-card> 
+  </div>  
+  <div class="info-page padding-5">
+    <md-card>
+      <md-card-title>
+        Info
+      </md-card-title>  
+      <md-card-content>
+        this is info section
+      </md-card-content> 
+    </md-card>  
+  </div>  
+  <div class="info-page padding-5">
+    <md-card>
+      <md-card-title>
+        Recent Purchases
+      </md-card-title>  
+      <md-card-content>
+        None
+      </md-card-content> 
+    </md-card>  
 </div>  
+</div> 
+
+<modal #modal>
+    <modal-header [show-close]="false">
+        <h4 class="modal-title">Upload a Profile Picture</h4>
+    </modal-header>
+    <modal-body>
+        Hello World!
+    </modal-body>
+    <modal-footer [show-default-buttons]="true"></modal-footer>
+</modal>
+
+
+
+
+
+ 
