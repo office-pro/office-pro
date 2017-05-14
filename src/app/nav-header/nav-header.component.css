@@ -39,7 +39,18 @@ md-sidenav {
     margin-top: -15px;
     margin-bottom: 40px;
 }
+.font-variant {
+  font-variant: small-caps;
+  font-weight: 600;
+}
+.bottom-margin-0 {
+    margin-bottom: 0px;
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
 /*
   
 <style>…</style>

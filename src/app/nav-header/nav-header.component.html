@@ -1,12 +1,14 @@
 
 <div [class.dark-theme]="isDarkTheme">
-
+<md-toolbar id="toolbar" color="primary" class="margin animated fadeInDown bottom-margin-0">
+  <span class="set-margin-right font-variant "><a class="set-white-color" routerLink="/dashboard">Office-pro</a></span>
+</md-toolbar>
 <md-toolbar id="toolbar" color="primary" class="margin animated fadeInDown">
   <button md-icon-button (click)="onChange(value = !value)">
     <md-icon *ngIf="!value">menu</md-icon>
     <md-icon *ngIf="value">arrow_back</md-icon>
   </button>
-  <span class="set-margin-right">Office-pro</span>
+  
   <a routerLink="about" id="about" class="set-margin-right set-white-color">About</a>
   <a routerLink="services" id="services" class="set-margin-right set-white-color">Service</a>
   <a routerLink="login" id="login" class="set-margin-right set-white-color">Login</a>
@@ -21,5 +23,5 @@
         {{ item.text }}
   </button>
   </md-menu>
-</md-toolbar>
+</md-toolbar>  
 </div>

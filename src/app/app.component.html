@@ -64,12 +64,14 @@
 -->   
 <div [ngClass]="{ 'max-div' : value}">
 <header >
-  <app-nav-header (navHeader)="value = $event" (changeIcon)="value"></app-nav-header>
+  <app-nav-header (navHeader)="value = $event; toggleSidebar($event)" (changeIcon)="value"></app-nav-header>
 </header>
 </div>
-<div [ngClass]="{ 'min-div' : value}" *ngIf= "value">
+<div [ngClass]="{ 'min-div' : value}" [@flyOut]="state" *ngIf= "value">
    {{value}}
-  </div>
+</div>
+<!--<button (click)="beginAnim()">Clickme</button>
+<div [@fadeInOut]="state" class="dummyComponent"></div> -->
 <div [ngClass]="{ 'max-div' : value}" (click)="value = false">
    <router-outlet routerOnActivate="active" class="apply-background"></router-outlet>
 </div>
