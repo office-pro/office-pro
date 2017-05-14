@@ -4,6 +4,7 @@
     <md-card>
       <md-card-title>
         Total Transaction
+        <!--{{ 'en.total_transaction' | translate }}-->
       </md-card-title>  
       <md-card-content>
         22400
@@ -12,10 +13,12 @@
   </div>
   <div class="div-20-per">
     <div class="image-photo" (click)="modal.open()">
+      <div class="image-hover">
+      </div>  
     </div>
   </div>
   <div class="div-40 float-right height-auto padding-top">
-    <md-card>
+    <md-card (click)="meeting.open()">
       <md-card-title>
         Number of transactions
       </md-card-title>  
@@ -61,13 +64,22 @@
 
 <modal #modal>
     <modal-header [show-close]="false">
-        <h4 class="modal-title">Upload a Profile Picture</h4>
+        <h4 class="modal-title title">Upload a Profile Picture</h4>
     </modal-header>
     <modal-body>
         Hello World!
     </modal-body>
     <modal-footer [show-default-buttons]="true"></modal-footer>
 </modal>
+<modal #meeting>
+  <modal-header [show-close]='false'>
+    <h4 class="modal-title title">Book a Meeting</h4>
+  </modal-header>
+  <modal-body>
+    Book a meeting
+  </modal-body>
+  <modal-footer [show-default-buttons]='true'></modal-footer>     
+</modal>  
 
 
 

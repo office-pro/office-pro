@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalDirective } from 'ngx-bootstrap/modal';
+// import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-user-profile',
@@ -8,7 +9,10 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
 })
 export class UserProfileComponent implements OnInit {
   file:any;
-  constructor() { }
+  constructor() { 
+    // translate.setDefaultLang('en');
+    // translate.use('en');
+  }
 
   ngOnInit() {
   }
