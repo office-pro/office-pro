@@ -1,0 +1,67 @@
+.main-page{
+  width: 100%;
+  padding: 10px;
+  margin : 0 auto;
+ 
+}
+.image-photo{
+  width: 140px;
+  height: 180px;
+  background-color: #734444;
+  padding:2px;
+  margin: 0 auto;
+  border-radius: 2px solid #ffffff;
+}
+
+.image-photo:hover {
+    position: relative;
+    bottom: -137px;
+    opacity: 0.75;
+    height: 40px;
+    background-color: black;
+}
+
+#getFile {
+  display: none;
+}
+#getFileLabel {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+}
+  .div-40{
+    display: inline-block; 
+    width:40%;
+    margin: 0 auto;   
+  }
+  .div-20-per{
+    display: inline-block; 
+    width:20%;
+    padding:2px;
+  }
+  .float-left{
+    float: left;
+  }
+  .float-right{
+    float: right;
+  } 
+
+  .height-auto {
+    height: auto;
+  }
+  .padding-top {
+    padding-top: 39px;
+  }
+  .padding-5 {
+    padding-top: 5px;
+  }
+  .info-page {
+    width: 100%;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+
+
